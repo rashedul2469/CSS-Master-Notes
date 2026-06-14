@@ -1,0 +1,14 @@
+.flexing{
+    background-color: aqua;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.inner{
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+}

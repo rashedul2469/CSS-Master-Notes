@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        p i{
+            color: brown;
+        }
+
+        div >p{
+            background-color: yellow;
+        }
+
+        div + p {
+            background-color: yellow;
+        }
+
+        #combinator~p{
+            color: green;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <p>
+        <i>This is italic.</i>
+    </p>
+    <!--Nested-->
+
+    <div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section>
+    <p>Paragraph 3 in the div (inside a section element).</p>
+    </section>
+    <p>Paragraph 4 in the div.</p>
+    </div>
+    
+    <p>Paragraph 5 in the div.</p>
+    <p>Paragraph 6 in the div.</p>
+
+    <div id ="combinator">
+    <p>Paragraph 2.</p>
+    <p>Paragraph 3.</p>
+    </div>
+
+    <p>Paragraph 3.</p>
+    <code>Some code.</code>
+    <p>Paragraph 4.</p>
+    <p>Paragraph 4.</p>
+    <p>Paragraph 4.</p>
+
+</body>
+</html>

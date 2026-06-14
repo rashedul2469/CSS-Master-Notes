@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        input[type] {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        /* Exact match */
+        input[type="password"] {
+            border: 2px solid red;
+        }
+
+        /* Starts with https */
+        a[href^="https://"] {
+            color: green;
+        }
+
+        /* Ends with .pdf */
+        a[href$=".pdf"] {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Contains youtube.com */
+        a[href*="youtube.com"] {
+            background: #ffecec;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<input type="text" placeholder="Text field">
+<input type="password" placeholder="Password field">
+<input placeholder="No type">
+
+<a href="https://google.com">Google</a><br>
+<a href="https://youtube.com/watch?v=123">YouTube</a><br>
+<a href="files/report.pdf">Download report</a>
+
+</body>
+</html>
